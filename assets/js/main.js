@@ -45,13 +45,13 @@ const sr = ScrollReveal({
     distance: '60px',
     duration: 2000,
     delay: 200,
-    // reset: true
+    // reset: true // Uncomment to repeat animations
 });
 
-sr.reveal('.home__data, .hero__image, .about__img, .values__img, .about__text, .values__text, .about__subtitle, .values__subtitle, .values__list');
-sr.reveal('.home__img, .hero__image, .about__subtitle, .values__subtitle, .values__list, .about__text, .values__text, .about__img, .values__img', { delay: 400 });
-sr.reveal('.home__social-icon', { interval: 200 });
-sr.reveal('.service__img, service2__img', { interval: 200 });
+sr.reveal('.nav__logo, .hero__image, .about__img, .values__img, .about__text, .values__text, .about__subtitle, .values__subtitle, .values__list');
+sr.reveal('.nav__logo, .hero__image, .about__subtitle, .values__subtitle, .values__list, .about__text, .values__text, .about__img, .values__img', { delay: 400 });
+sr.reveal('footer__copy', { interval: 200 });
+sr.reveal('.service__img, .service2__img', { interval: 200 });
 
 // Additional code for new pages
 window.addEventListener('load', () => {
@@ -114,3 +114,54 @@ window.addEventListener('load', () => {
         service2Container.style.gridTemplateColumns = 'repeat(3, 1fr)';
     }
 });
+
+// Smooth scroll for internal links
+const smoothScroll = (target, duration) => {
+    const targetElement = document.querySelector(target);
+    const targetPosition = targetElement.getBoundingClientRect().top;
+    const startPosition = window.pageYOffset;
+    let startTime = null;
+
+    const ease = (t, b, c, d) => {
+        t /= d / 2;
+        if (t < 1) return c / 2 * t * t + b;
+        t--;
+        return -c / 2 * (t * (t - 2) - 1) + b;
+    };
+
+    const animation = currentTime => {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, targetPosition, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+    };
+
+    requestAnimationFrame(animation);
+};
+
+navLinks.forEach(link => {
+    link.addEventListener('click', function (e) {
+        if (this.hash !== '') {
+            e.preventDefault();
+            const hash = this.hash;
+            smoothScroll(hash, 1000);
+        }
+    });
+});
+
+// Form submission handling
+const contactForm = document.querySelector('.contact__form');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        const formData = new FormData(this);
+
+        // Example form data handling (customize as needed)
+        console.log('Form submitted:', Object.fromEntries(formData.entries()));
+
+        // Optionally clear form fields after submission
+        contactForm.reset();
+    });
+}
