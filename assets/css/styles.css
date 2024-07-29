@@ -556,10 +556,6 @@ img {
   margin-left: auto;
 }
 
-/* .envelope-icon {
-  font-size: 26px; /* Customize the size as needed */
-}
- */
 .envelope-icon {
   font-size: 26px; /* Customize the size as needed */
   color: #3E6FF4;
@@ -718,4 +714,3 @@ img {
     width: 450px;
   }
 }
-
