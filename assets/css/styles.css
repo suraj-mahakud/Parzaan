@@ -157,7 +157,7 @@ img {
 }
 
 .nav__toggle {
-  color: var(--second-color);
+  color: var(--first-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
@@ -170,7 +170,7 @@ img {
   height: 0.18rem;
   left: 0;
   top: 2rem;
-/*   background-color: var(--first-color); */
+  /* background-color: var(--first-color); */
 }
 
 /*=== Show menu ===*/
@@ -558,7 +558,7 @@ img {
 
 .envelope-icon {
   font-size: 26px; /* Customize the size as needed */
-  color: #3E6FF4;
+  /* color: var(--first-color); */
 }
 
 /* ===== FOOTER =====*/
@@ -671,7 +671,7 @@ img {
     display: none;
   }
   .nav__link {
-    color: var(--second-color);
+    color: var(--first-color);
   }
   .home {
     padding: 8rem 0 2rem;
