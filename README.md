@@ -1,3 +1,3 @@
-# Parzan
-Parazan Consulting Website
+# Parzaan
+Parzaan Consulting Website
 https://suraj-mahakud.github.io/Parzaan/
