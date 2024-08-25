@@ -5,13 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Styles -->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/scss/styles.scss">
+        <!-- <link rel="stylesheet" href="assets/scss/styles.scss"> -->
         <!-- Favicons -->
         <link href="assets/img/Parzaanconsultinglogo.png" rel="icon">
 
         <!-- =====BOX ICONS===== -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <!-- <link href='assets/css/boxicons.min.css' rel='stylesheet'> -->
+        <link href='assets/unpkg/boxicons.min.css' rel='stylesheet'>
 
         <title>Parzaan Consulting | Home</title>
     </head>
@@ -23,8 +22,8 @@
                     <a href="#" class="nav__logo"></a>
                 </div> -->
                 <div>
-                    <a href="/index.html" class="nav__logo">
-                      <img src="./assets/img/Parzaanconsultinglogo.png" alt="logo" class="logo-image">
+                    <a href="index.html" class="nav__logo">
+                      <img src="assets/img/Parzaanconsultinglogo.png" alt="logo" class="logo-image">
                     </a>
                   </div>                                   
 
@@ -32,9 +31,9 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="advisory.html" class="nav__link">Advisory</a></li>
-                        <li class="nav__item"><a href="smart-cities.html" class="nav__link">Smart Cities</a></li>
+                        <li class="nav__item"><a href="smartcities.html" class="nav__link">Smart Cities</a></li>
                         <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
-                        <li class="nav__item"><a href="mailto:alliance@parzaanconsulting.co.in" class="nav__link"><i class='bx bxs-envelope bx-flip-horizontal bx-tada envelope-icon'></i></a></li>
+                        <li class="nav__item"><a href="mailto:alliance@parzaanconsulting.com" class="nav__link"><i class='bx bxs-envelope bx-flip-horizontal bx-tada envelope-icon'></i></a></li>
                     </ul>
                 </div>
 
@@ -49,7 +48,7 @@
             <!-- Hero Section -->
             <section class="hero">
                 <div class="hero__image-container">
-                    <img src="./assets/img/home-heroimg.png" alt="Hero Image" class="hero__image">
+                    <img src="assets/img/bgheroimg.png" alt="Hero Image" class="hero__image">
                     <div class="hero__overlay">
                         <marquee class="hero__marquee">Innovative strategies to transform your business</marquee>
                     </div>
@@ -79,19 +78,26 @@
                     </div>
                     <div>
                         <h2 class="values__subtitle">Our Values</h2>
-                        <p class="values__text">At Parzaan Consulting, our core values are:</p>
+                        <!-- <p class="values__text">At <strong>Parzaan Consulting</strong>, our core values are:</p> -->
                 <ul class="values__list">
-                    <li>Integrity: Upholding the highest standards of professionalism and ethical behavior.</li>
-                    <li>Innovation: Pioneering solutions that address complex challenges and create value.</li>
-                    <li>Customer Focus: Committing to surpass client expectations through tailored services and enduring partnerships.</li>
+                    <li><strong>Integrity</strong>:<br>Upholding the highest standards of professionalism and ethical behavior.</li>
+                    <li><strong>Innovation</strong>:<br>Pioneering solutions that address complex challenges and create value.</li>
+                    <li><strong>Customer Focus</strong>:<br>Committing to surpass client expectations through tailored services and enduring partnerships.</li>
                 </ul>
                     </div>
                 </div>
             </section>
-
+            <!-- <section class="about section" id="about">
+                <h2 class="section-title">Government and Public Services</h2>
+                <div style="text-align: center;">
+                    <p class="about__text" style="text-align: justify; display: inline-block; width: 65%; height: auto; font-size: 18px;">
+                        In recent years, the increasing connectivity, the rise of digital technology, and the lingering effects of the pandemic have significantly transformed economies worldwide. These rapid changes offer substantial opportunities for economic and social development but also pose considerable challenges for governments. Governments are essential in leading this transformation and driving a new era of sustainable prosperity through job creation, investments, and the development of new industries. In India, both central and state governments have introduced various national programs that create opportunities for investors to enhance the country's infrastructure and improve citizen services. These initiatives mark the beginning of significant business reforms across the economy. Parzaan Consulting is committed to supporting this transformation by providing specialized advice and solutions. These efforts align with national programs focused on areas such as water, sanitation, health, urban transformation, manufacturing, tourism, aerospace, defence, and the digital delivery of public services. Parzaan Consulting actively participates in and advises on major reform programs, including ‘Swachh Bharat’ (Clean India), ‘Make in India’, ‘Ease of Doing Business’, ‘Smart Cities’, ‘Digital India’, and ‘Skill India’. With a deep understanding of the government’s environment, culture, policies, and procedures, Parzaan Consulting leverages both national and international networks to access resources and introduce new perspectives to support these initiatives.
+                    </p>    
+                </div>                
+            </section> -->
             <!--===== SERVICES =====-->
             <section class="service section" id="service">
-                <h2 class="section-title">Services</h2>
+                <h2 class="section-title">Our Services</h2>
             
                 <div class="service__container bd-grid">
                     <!-- First row with four items -->
@@ -216,10 +222,10 @@
         <!-- <p class="footer__title">Let's Connect</p> -->
         <!-- <div class="footer__social">
             <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-            <a href="mailto:alliance@parzaanconsulting.co.in" class="footer__icon"><i class='bx bx-envelope' ></i></a>
+            <a href="mailto:alliance@parzaanconsulting.com" class="footer__icon"><i class='bx bx-envelope' ></i></a>
             <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
         </div> -->
-        <p class="footer__copy">&#169;All Rights Reserved by Parzaan Consulting | Designed and Developed by Mindpik Technologies
+        <p class="footer__copy">&#169;All Rights Reserved by Parzaan Consulting | Designed and Developed by Mindpik Technologies Pvt. Ltd.
         <!-- <p class="footer__copy">&#169;Designed and Developed by MTPL</p> -->
         <script>
             document.write(new Date().getFullYear())
@@ -227,7 +233,7 @@
     </footer>
 
         <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/unpkg/scrollreveal.js"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>

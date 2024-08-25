@@ -30,10 +30,13 @@ const highlightActiveLink = () => {
         const sectionId = section.getAttribute('id');
         const navLink = document.querySelector(`.nav__menu a[href*="${sectionId}"]`);
 
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            navLink.classList.add('active');
-        } else {
-            navLink.classList.remove('active');
+        // Check if navLink is not null before attempting to add or remove the class
+        if (navLink) {
+            if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                navLink.classList.add('active');
+            } else {
+                navLink.classList.remove('active');
+            }
         }
     });
 };
@@ -55,7 +58,7 @@ sr.reveal('.service__img, .service2__img', { interval: 200 });
 
 // Additional code for new pages
 window.addEventListener('load', () => {
-    if (document.querySelector('.advisory .content') || document.querySelector('.smart-cities .content')) {
+    if (document.querySelector('.advisory .content') || document.querySelector('.smartcities .content')) {
         sr.reveal('.content h1, .content p', { delay: 200, interval: 200 });
     }
 });

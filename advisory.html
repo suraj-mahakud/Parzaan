@@ -5,13 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Styles -->
         <link rel="stylesheet" href="assets/css/styles.css">
-        <link rel="stylesheet" href="assets/scss/styles.scss">
+        <!-- <link rel="stylesheet" href="assets/scss/styles.scss"> -->
         <!-- Favicons -->
         <link href="assets/img/Parzaanconsultinglogo.png" rel="icon">
 
         <!-- =====BOX ICONS===== -->
-        <!-- <link href='assets/css/boxicons.min.css' rel='stylesheet'> -->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href='assets/unpkg/boxicons.min.css' rel='stylesheet'>
 
         <title>Parzaan Consulting | Advisory</title>
     </head>
@@ -23,8 +22,8 @@
                     <a href="#" class="nav__logo"></a>
                 </div> -->
                 <div>
-                    <a href="/index.html" class="nav__logo">
-                      <img src="./assets/img/Parzaanconsultinglogo.png" alt="logo" class="logo-image">
+                    <a href="index.html" class="nav__logo">
+                      <img src="assets/img/Parzaanconsultinglogo.png" alt="logo" class="logo-image">
                     </a>
                   </div>                                   
 
@@ -32,9 +31,9 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
                         <li class="nav__item"><a href="advisory.html" class="nav__link">Advisory</a></li>
-                        <li class="nav__item"><a href="smart-cities.html" class="nav__link">Smart Cities</a></li>
+                        <li class="nav__item"><a href="smartcities.html" class="nav__link">Smart Cities</a></li>
                         <li class="nav__item"><a href="contact.html" class="nav__link">Contact Us</a></li>
-                        <li class="nav__item"><a href="mailto:alliance@parzaanconsulting.co.in" class="nav__link"><i class='bx bxs-envelope bx-flip-horizontal bx-tada envelope-icon'></i></a></li>
+                        <li class="nav__item"><a href="mailto:alliance@parzaanconsulting.com" class="nav__link"><i class='bx bxs-envelope bx-flip-horizontal bx-tada envelope-icon'></i></a></li>
                     </ul>
                 </div>
 
@@ -49,7 +48,7 @@
             <!-- Hero Section -->
             <section class="hero">
                 <div class="hero__image-container">
-                    <img src="./assets/img/advisory-hero.png" alt="Hero Image" class="hero__image">
+                    <img src="assets/img/advisory-hero.png" alt="Hero Image" class="hero__image">
                     <div class="hero__overlay">
                         <marquee class="hero__marquee">"Empowering your vision with expert precision and innovative solutions."</marquee>
                     </div>
@@ -58,18 +57,210 @@
 
             <!--===== ABOUT =====-->
             <section class="about section" id="about">
-                <h2 class="section-title">Advisory Services</h2>
-
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/ad1.png" alt="img">
-                    </div>
-                    
-                    <div>
-                        <!-- <h2 class="about__subtitle">Company Overview</h2> -->
-                        <p class="about__text">Like its global counterparts, Parzaan Consulting delivers a comprehensive suite of services that align with the diverse needs of modern organizations. By combining industry expertise with insights into local and global market trends, Parzaan Consulting ensures that its clients are well-positioned to achieve sustainable growth and resilience in the face of evolving economic landscapes. Whether guiding through digital transformation, advising on mergers and acquisitions, or implementing robust risk management frameworks, Parzaan Consulting remains a crucial partner in navigating complexity and driving business success.</p>           
-                    </div>                                   
+                <h2 class="section-title">Government and Public Services</h2>
+                <div style="text-align: center;">
+                    <p class="about__text" style="text-align: justify; display: inline-block; width: 65%; height: auto; font-size: 1rem;">
+                        In recent years, the increasing connectivity, the rise of digital technology, and the lingering effects of the pandemic have significantly transformed economies worldwide. These rapid changes offer substantial opportunities for economic and social development but also pose considerable challenges for governments. Governments are essential in leading this transformation and driving a new era of sustainable prosperity through job creation, investments, and the development of new industries. In India, both central and state governments have introduced various national programs that create opportunities for investors to enhance the country's infrastructure and improve citizen services. These initiatives mark the beginning of significant business reforms across the economy. Parzaan Consulting is committed to supporting this transformation by providing specialized advice and solutions. These efforts align with national programs focused on areas such as water, sanitation, health, urban transformation, manufacturing, tourism, defence, and the digital delivery of public services. Parzaan Consulting actively participates in and advises on major reform programs, including ‘Swachh Bharat’ (Clean India), ‘Make in India’, ‘Ease of Doing Business’, ‘Smart Cities’, ‘Digital India’, and ‘Skill India’. With a deep understanding of the government’s environment, culture, policies, and procedures, Parzaan Consulting leverages both national and international networks to access resources and introduce new perspectives to support these initiatives.
+                    </p>    
+                    <h2 class="section-title" style="font-size: 20px;">Our service offerings are designed to deliver successful outcomes</h2>    
                 </div>
+                <div class="service__container bd-grid">
+                    <!-- First row with four items -->
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/1.png" alt="Service 1">
+                        </a>
+                        <div class="service__description">
+                            <h3>Strategy & Policy Advisory</h3>
+                            <!-- <p>Details about Service 1...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/2.png" alt="Service 2">
+                        </a>
+                        <div class="service__description">
+                            <h3>Digital Transformation</h3>
+                            <!-- <p>Details about Service 2...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/3.png" alt="Service 3">
+                        </a>
+                        <div class="service__description">
+                            <h3>Environment & Social Impact Assessment</h3>
+                            <!-- <p>Details about Service 3...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/PM.jpg" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Program Management</h3>
+                            <!-- <p>Details about Service 4...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/4.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Public Private Partnership Advisory</h3>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/5.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Operations Transformation</h3>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/6.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Capacity Building & Institutional Strengthening</h3>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/7.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Process Reform</h3>
+                        </div>
+                    </div>
+                </div>                                                               
+            </section>                       
+            <section class="about section" id="about">
+                <h2 class="section-title">Our Work Sectors</h2>
+                <div class="service__container bd-grid">
+                    <!-- First row with four items -->
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/water.png" alt="Service 2">
+                        </a>
+                        <div class="service__description">
+                            <h3>Water</h3>
+                            <!-- <p>Details about Service 2...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/defence.png" alt="Service 3">
+                        </a>
+                        <div class="service__description">
+                            <h3>Defence</h3>
+                            <!-- <p>Details about Service 3...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/agri.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Agriculture & Allied</h3>
+                            <!-- <p>Details about Service 4...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/eduskill.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Education and Skilling</h3>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/health.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Health</h3>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/industries.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Industries</h3>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/logistics.png" alt="Service 4">
+                        </a>
+                        <div class="service__description">
+                            <h3>Logistics</h3>
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/msme.png" alt="Service 1">
+                        </a>
+                        <div class="service__description">
+                            <h3>MSMEs</h3>
+                            <!-- <p>Details about Service 1...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/sanitation.png" alt="Service 1">
+                        </a>
+                        <div class="service__description">
+                            <h3>Sanitation</h3>
+                            <!-- <p>Details about Service 1...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/srd.png" alt="Service 1">
+                        </a>
+                        <div class="service__description">
+                            <h3>Social & Rural Development</h3>
+                            <!-- <p>Details about Service 1...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/textile.png" alt="Service 1">
+                        </a>
+                        <div class="service__description">
+                            <h3>Textiles</h3>
+                            <!-- <p>Details about Service 1...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/tourism.png" alt="Service 1">
+                        </a>
+                        <div class="service__description">
+                            <h3>Tourism</h3>
+                            <!-- <p>Details about Service 1...</p> -->
+                        </div>
+                    </div>
+                    <div class="service__item">
+                        <a href="#" class="service__img">
+                            <img src="assets/img/urbantransport.png" alt="Service 1">
+                        </a>
+                        <div class="service__description">
+                            <h3>Urban Transformation</h3>
+                            <!-- <p>Details about Service 1...</p> -->
+                        </div>
+                    </div>
+                </div>                
+            </section>    
+            <section class="about section" id="about">
+                <div style="text-align: center;">
+                    <p class="about__text" style="text-align: justify; display: inline-block; width: 65%; height: auto; font-size: 1rem;">
+                        Like its global counterparts, Parzaan Consulting delivers a comprehensive suite of services that align with the diverse needs of modern organizations. By combining industry expertise with insights into local and global market trends, Parzaan Consulting ensures that its clients are well-positioned to achieve sustainable growth and resilience in the face of evolving economic landscapes. Whether guiding through digital transformation, advising on mergers and acquisitions, or implementing robust risk management frameworks, Parzaan Consulting remains a crucial partner in navigating complexity and driving business success.
+                    </p>    
+                </div>                
             </section>
             <!--===== OUR VALUES =====-->
             <section class="values section" id="values">
@@ -78,11 +269,11 @@
                         <img src="assets/img/ad2.png" alt="Our Values">
                     </div>
                     <div>
-                        <h2 class="values__subtitle">Parzaan Consulting Advisory Services</h2>
-                        <p class="values__text">Strategy and Operations Consulting:</p>
+                        <!-- <h2 class="values__subtitle">Parzaan Consulting Advisory Services</h2> -->
+                        <!-- <p class="values__text">Strategy and Operations Consulting:</p> -->
                 <ul class="values__list">
-                    <li>Parzaan Consulting helps organizations streamline their operations and refine their strategic direction to enhance overall performance. This includes offering advice on market entry strategies, cost reduction, supply chain optimization, and business model transformation.</li>
-                    <li>Technology Advisory: We assist clients in harnessing the power of technology to improve their business processes, enhance data governance, implement cybersecurity measures, and adopt new technologies like AI and blockchain. This service ensures that clients are equipped with the tools necessary to compete in a digitally driven world.</li>
+                    <li><strong>Strategy and Operations Consulting</strong>: Parzaan Consulting helps organizations streamline their operations and refine their strategic direction to enhance overall performance. This includes offering advice on market entry strategies, cost reduction, supply chain optimization, and business model transformation.</li>
+                    <li><strong>Technology Advisory</strong>: We assist clients in harnessing the power of technology to improve their business processes, enhance data governance, implement cybersecurity measures, and adopt new technologies like AI and blockchain. This service ensures that clients are equipped with the tools necessary to compete in a digitally driven world.</li>
                     <!-- <li>Risk and Compliance Consulting: Parzaan Consulting advises on risk management frameworks that help mitigate IT , operational, and reputational risks. We also guide organizations through regulatory compliance, helping them meet standards set by various governing bodies while ensuring that their operations remain fluid and robust.</li>
                     <li>Sustainability and Climate Change: We offer consultancy on environmental, social, and corporate governance (ESG) criteria, helping businesses develop sustainable practices that not only contribute to the global effort against climate change but also enhance their market standing and stakeholder relations.</li> -->
                 </ul>
@@ -93,17 +284,22 @@
             <section class="about section" id="about">
                 <!-- <h2 class="section-title">Company Overview</h2> -->
 
-                <div class="about__container bd-grid">
+                <!-- <div class="about__container bd-grid">
                     <div class="about__img">
                         <img src="assets/img/ad3.png" alt="img">
                     </div>
                     
                     <div>
-                        <!-- <h2 class="about__subtitle">Company Overview</h2> -->
+                        <h2 class="about__subtitle">Company Overview</h2>
                         <p class="about__text">Parzaan Consulting provides consulting solutions across areas such as corporate strategy, risk and compliance, and operations. Parzaan Consulting offers a range of advisory services designed to guide businesses and government entities through complex challenges and market dynamics, similar to those provided by prominent global consulting firms. These services are tailored to ensure that organizations not only keep pace with current trends but also stay ahead of the curve through strategic planning, technological advancement, and optimized operations.</p>           
                     </div>                                   
-                </div>
-            </section>
+                </div> -->
+                <div style="text-align: center;">
+                    <p class="about__text" style="text-align: justify; display: inline-block; width: 65%; height: auto; font-size: 1rem;">
+                        Parzaan Consulting provides consulting solutions across areas such as corporate strategy, risk and compliance, and operations. Parzaan Consulting offers a range of advisory services designed to guide businesses and government entities through complex challenges and market dynamics, similar to those provided by prominent global consulting firms. These services are tailored to ensure that organizations not only keep pace with current trends but also stay ahead of the curve through strategic planning, technological advancement, and optimized operations.
+                    </p>    
+                </div>                
+            </section>            
             <!--===== OUR VALUES =====-->
             <section class="values section" id="values">
                 <div class="values__container bd-grid">
@@ -111,16 +307,15 @@
                         <img src="assets/img/ad4.png" alt="Our Values">
                     </div>
                     <div>
-                        <h2 class="values__subtitle">Parzaan Consulting Advisory Services</h2>
+                        <!-- <h2 class="values__subtitle">Parzaan Consulting Advisory Services</h2> -->
                         <!-- <p class="values__text">At Parzaan Consulting, our core values are:</p> -->
                 <ul class="values__list">
-                    <li>Risk and Compliance Consulting: Parzaan Consulting advises on risk management frameworks that help mitigate IT , operational, and reputational risks. We also guide organizations through regulatory compliance, helping them meet standards set by various governing bodies while ensuring that their operations remain fluid and robust.</li>
-                    <li>Sustainability and Climate Change: We offer consultancy on environmental, social, and corporate governance (ESG) criteria, helping businesses develop sustainable practices that not only contribute to the global effort against climate change but also enhance their market standing and stakeholder relations.</li>
+                    <li><strong>Risk and Compliance Consulting</strong>: Parzaan Consulting advises on risk management frameworks that help mitigate IT , operational, and reputational risks. We also guide organizations through regulatory compliance, helping them meet standards set by various governing bodies while ensuring that their operations remain fluid and robust.</li>
+                    <li><strong>Sustainability and Climate Change</strong>: We offer consultancy on environmental, social, and corporate governance (ESG) criteria, helping businesses develop sustainable practices that not only contribute to the global effort against climate change but also enhance their market standing and stakeholder relations.</li>
                 </ul>
                     </div>
                 </div>
-            </section>
-
+            </section>            
         </main>
 
     <!--===== FOOTER =====-->
@@ -128,10 +323,10 @@
         <!-- <p class="footer__title">Let's Connect</p> -->
         <!-- <div class="footer__social">
             <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-            <a href="mailto:alliance@parzaanconsulting.co.in" class="footer__icon"><i class='bx bx-envelope' ></i></a>
+            <a href="mailto:alliance@parzaanconsulting.com" class="footer__icon"><i class='bx bx-envelope' ></i></a>
             <a href="#" class="footer__icon"><i class='bx bxl-linkedin' ></i></a>
         </div> -->
-        <p class="footer__copy">&#169;All Rights Reserved by Parzaan Consulting | Designed and Developed by Mindpik Technologies
+        <p class="footer__copy">&#169;All Rights Reserved by Parzaan Consulting | Designed and Developed by Mindpik Technologies Pvt. Ltd.
         <!-- <p class="footer__copy">&#169;Designed and Developed by MTPL</p> -->
         <script>
             document.write(new Date().getFullYear())
@@ -139,7 +334,7 @@
     </footer>    
 
         <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="assets/unpkg/scrollreveal.js"></script>
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js"></script>
