@@ -52,9 +52,9 @@ const sr = ScrollReveal({
 });
 
 sr.reveal('.nav__logo, .hero__image, .about__img, .values__img, .about__text, .values__text, .about__subtitle, .values__subtitle, .values__list');
-sr.reveal('.nav__logo, .hero__image, .about__subtitle, .values__subtitle, .values__list, .about__text, .values__text, .about__img, .values__img', { delay: 400 });
+sr.reveal('.nav__logo, .hero__image, .about__subtitle, .values__subtitle, .values__list, .about__text, .values__text, .about__img, .values__img', { delay: 200 });
 sr.reveal('footer__copy', { interval: 200 });
-sr.reveal('.service__img, .service2__img', { interval: 200 });
+sr.reveal('.service__img, .service2__img, .service3__img', { interval: 200 });
 
 // Additional code for new pages
 window.addEventListener('load', () => {
@@ -167,4 +167,15 @@ if (contactForm) {
         // Optionally clear form fields after submission
         contactForm.reset();
     });
+}
+
+// Get the current year
+const currentYear = new Date().getFullYear();
+
+// Find the element with the id "current-year"
+const yearElement = document.getElementById('current-year');
+
+// Set the content of the element to the current year
+if (yearElement) {
+    yearElement.textContent = currentYear;
 }
